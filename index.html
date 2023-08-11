@@ -13,7 +13,7 @@
   <h1 class="centered-text border-properties">Programming Language Survey</h1>
 
   <div>
-    <div class="main-text">Should you learn C#, C++ or Python first? Respond to the survey below by choosing the answer most applicable to you. Click the submit button to learn which programming language might be best for you! Click on the reset button to reset the form and/or clear your results.
+    <div class="main-text">Should you learn C#, C++ or Python first? Respond to the survey below by choosing the most applicable answer. Click the submit button to learn which programming language might be best for you! Click on the reset button to reset the form and/or clear your results.
     </div>
 
     <form id="survey" class="box">
@@ -69,16 +69,18 @@
           </p>
         </li>
       </ol>
+      <label for="user-name">Please enter your name:</label>
+      <input id="input-name" type="text" name="user-name" required>
       <button id="submit-button" type="submit">Submit</button>
       <button type="reset">Reset</button>
     </form>
 
     <div class="box">
       <p><strong>Your result:</strong></p>
-      <p id="c#" class="hidden">You should study the <strong>C# programming language</strong>. C# was developed at Microsoft in the early 2000s and is a general-purpose high-level object-oriented programming language. C# was the eighth most popular programming language among professional developers in Stack Overflow's 2023 survey. The Unity game engine uses C#, and it is also the back-end language taught at Epicodus (along with HTML/CSS and JavaScript for front-end development)!</p>
-      <p id="c++" class="hidden">You should study the <strong>C++ programming language</strong>. C++ was developed at Bell Labs in the late 1970s, as an extension to the C programming language, and released in the mid 1980s. C++ was the ninth most popular programming language among professional developers in Stack Overflow's 2023 survey. It is used in operating systems including MacOS, iOS and Windows, in databases like MySQL and MongoDB, and in videogame engines like the Unreal Engine.</p>
-      <p id="python" class="hidden">You should study the <strong>Python programming language</strong>. Python was developed in the late 1980s and released in the early 1990s. Python is used in a wide range of applications and industries. It's particularly popular in data science as well as FinTech companies. It was the fourth most popular language among professional developers in Stack Overflow's 2023 survey. And its name was inspired by the BBC television comedy sketch series "Monty Python's Flying Circus".</p>
-      <p id="algorithm" class="hidden">Wow! What a unique individual. Our algorithm was not able to compute a result based on your responses. Even though you indicated that you are not interested in enrolling at Epicodus, we strongly suggest you reconsider and study the <strong>C# programming language</strong>. Once you've completed the course, please apply for a job with us and help us improve our survey!</p>
+      <p id="c#" class="hidden">Hi <span class="user-name"></span>! You should study the <strong>C# programming language</strong>. C# was developed at Microsoft in the early 2000s and is a general-purpose high-level object-oriented programming language. C# was the eighth most popular programming language among professional developers in Stack Overflow's 2023 survey. The Unity game engine uses C#, and it is also the back-end language taught at Epicodus (along with HTML/CSS and JavaScript for front-end development)!</p>
+      <p id="c++" class="hidden">Hi <span class="user-name"></span>! You should study the <strong>C++ programming language</strong>. C++ was developed at Bell Labs in the late 1970s, as an extension to the C programming language, and released in the mid 1980s. C++ was the ninth most popular programming language among professional developers in Stack Overflow's 2023 survey. It is used in operating systems including MacOS, iOS and Windows, in databases like MySQL and MongoDB, and in videogame engines like the Unreal Engine.</p>
+      <p id="python" class="hidden">Hi <span class="user-name"></span>! You should study the <strong>Python programming language</strong>. Python was developed in the late 1980s and released in the early 1990s. Python is used in a wide range of applications and industries. It's particularly popular in data science as well as FinTech companies. It was the fourth most popular language among professional developers in Stack Overflow's 2023 survey. And its name was inspired by the BBC television comedy sketch series "Monty Python's Flying Circus".</p>
+      <p id="algorithm" class="hidden">Wow, <span class="user-name"></span>! What a unique individual you are. Our algorithm was not able to compute a result based on your responses. Even though you indicated that you are not interested in enrolling at Epicodus, we strongly suggest you reconsider and study the <strong>C# programming language</strong>. Once you've completed the course, please apply for a job with us and help us improve our survey!</p>
     </div>
   </div>
 </body>
