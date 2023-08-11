@@ -37,3 +37,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 0 1.5px rgb(59, 59, 59);
 }
+
+.image-box {
+  height: 100px;
+  width: 100px;
+}
