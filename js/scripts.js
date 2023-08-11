@@ -1,16 +1,14 @@
-// Business Logic
-
-
-
-
 
 // UI Logic
 
 window.addEventListener("load", submit);
+window.addEventListener("reset", hideResults);
 
 function submit() {
+
   const form = document.getElementById("survey");
   form.addEventListener("submit", processUserResponse);
+  
 }
 
 function processUserResponse(event) {
@@ -25,5 +23,15 @@ function processUserResponse(event) {
   } else {
     document.getElementById("algorithm").removeAttribute("class");
   }
+
+  document.getElementById("submit-button").disabled = true;
 }
 
+function hideResults() {
+  document.getElementById("c#").setAttribute("class", "hidden");
+  document.getElementById("c++").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("algorithm").setAttribute("class", "hidden");
+
+  document.getElementById("submit-button").disabled = false;
+}
