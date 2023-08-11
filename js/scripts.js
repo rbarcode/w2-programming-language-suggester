@@ -1,6 +1,4 @@
 
-// UI Logic
-
 window.addEventListener("load", submit);
 window.addEventListener("reset", hideResults);
 
@@ -37,7 +35,7 @@ function hideResults() {
   document.getElementById("submit-button").disabled = false;
 }
 
-/*NOTE: I'm confident there's a way to write this function better using a single class and collections or arrays and a for or foreach loop. I spent some time researching the topic but decided to use the method below because my research was taking too long. Thus, my commit history may not fully reflect the amount of time I have been working on this issue.*/
+/*NOTE: I'm confident there's a way to write this getInputName() function better using a single class and collections or arrays and a for or foreach loop. I spent some time researching the topic but decided to use the method below because my research was taking too long. Thus, my commit history may not fully reflect the amount of time I have been working on this issue.*/
 function getInputName() {
   const inputName = document.getElementById("input-name").value;
   document.getElementById("c#-user-name").innerText = inputName;
