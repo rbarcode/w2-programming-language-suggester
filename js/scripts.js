@@ -3,10 +3,8 @@ window.addEventListener("load", submit);
 window.addEventListener("reset", hideResults);
 
 function submit() {
-
   const form = document.getElementById("survey");
   form.addEventListener("submit", processUserResponse);
-
 }
 
 function processUserResponse(event) {
