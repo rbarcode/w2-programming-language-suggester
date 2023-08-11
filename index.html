@@ -11,27 +11,75 @@
 
 <body>
   <h1>Programming Language Survey</h1>
+
   <div>
     <div>
       <p>Respond to the survey below by choosing the answer most applicable to you. Click the submit button to learn which programming language you should learn first!</p>
     </div>
+    
     <form id="survey">
       <ol>
         <li>Do you like playing video games?
           <p>
             <label>
-              <input type="radio" value="yes">Yes
+              <input type="radio" name="question1" id="videogame-yes" value="yes">Yes
             </label>
             <label>
-              <input type="radio" value="no">No
+              <input type="radio" name="question1" id="videogame-no" value="no">No
             </label>
           </p>
         </li>
-        <li>
-
+        <li> Do you prefer using apps on a mobile phone or computer?
+          <p>
+            <label>
+              <input type="radio" name="question2" id="phone" value="phone">Mobile Phone
+            </label>
+            <label>
+              <input type="radio" name="question2" id="computer" value="computer">Computer
+            </label>
+          </p>
+        </li>
+        <li> Are you interested in the nitty gritty of computer science?
+          <p>
+            <label>
+              <input type="radio" name="question3" id="cs-yes" value="yes">Yes
+            </label>
+            <label>
+              <input type="radio" name="question3" id="cs-no" value="no">No
+            </label>
+          </p>
+        </li>
+        <li> Do you love BBC comedy series from the 1970s?
+          <p>
+            <label>
+              <input type="radio" name="question4" id="comedy-yes" value="yes">Yes
+            </label>
+            <label>
+              <input type="radio" name="question4" id="comedy-no" value="no">No
+            </label>
+          </p>
+        </li>
+        <li> Do you want to enroll at Epicodus?
+          <p>
+            <label>
+              <input type="radio" name="question5" id="enroll-yes" value="yes">Yes
+            </label>
+            <label>
+              <input type="radio" name="question5" id="enroll-no" value="no">No
+            </label>
+          </p>
         </li>
       </ol>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
+
+    <div>
+      <p>Your result: </p>
+      <p id="c#" class="hidden">You should study C#...</p>
+      <p id="c++" class="hidden">You should study C++...</p>
+      <p id="python" class="hidden">You should study Python...</p>
+    </div>
   </div>
 </body>
 
